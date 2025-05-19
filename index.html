@@ -8,17 +8,19 @@
   </head>
   <body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs>
-      <!-- Marker -->
       <a-marker preset="hiro">
-        <!-- NEW IMAGE -->
+        <!-- Raised image -->
         <a-image 
           src="nandi1.jpg" 
-          position="0 0.5 0" 
-          width="1.5" 
+          position="0 1 0" 
+          width="2" 
           height="1.5">
         </a-image>
 
-        <!-- Background Music -->
+        <!-- Test box -->
+        <a-box position="0 0.5 0" color="red" depth="0.5" height="0.5" width="0.5"></a-box>
+
+        <!-- Music -->
         <a-sound 
           src="music.mp3" 
           autoplay="true" 
@@ -26,8 +28,8 @@
         </a-sound>
       </a-marker>
 
-      <!-- Camera -->
       <a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
+
